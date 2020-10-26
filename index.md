@@ -1,5 +1,3 @@
-## Renato Oliveira
-
 Hi! My name is Renato and I'm a Salesforce Certified Application Architect.
 
 Currently working in Brazil for CbCloud, a Salesforce Platinum Consulting Partner.
