@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
 title: Renato Oliveira
 timezone: America/Sao_Paulo
+permalink: /texts/:year/:month/:day/:title
 google_analytics: G-Y7JTB5MZYW
