@@ -13,7 +13,3 @@ I like to help people sometomes at the [Salesforcethe Stack Exchange (SFSE)](htt
 #### Business (@cbcloud.com.br)
 
 ```77CC 982C AA09 0A3E DE75  3A14 DB1D 0256 7A47 A3BC```
-
-# Texts
-
-{% post_url 2020-11-01-hello-world %}
