@@ -14,4 +14,6 @@ I like to help people sometomes at the [Salesforcethe Stack Exchange (SFSE)](htt
 
 ```77CC 982C AA09 0A3E DE75  3A14 DB1D 0256 7A47 A3BC```
 
-[Test](2020-11-03-hello-world.md)
+## Posts
+
+[Cannot specify a gender for a gender neutral language” error when creating a new package version using 2GP? 🤔](/texts/2019/11/11/gender-neutral-2gp)
