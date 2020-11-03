@@ -38,10 +38,11 @@ The output of this command should be a JSON of considerable size (depending on t
     "references": [],
     "returnType": "void",
     "type": null
-  },
-  // and more methods below, if the class contains more than one method
+  }
 ]
 ```
+
+Note: that is just one element of the returned JSON. The output is way longer than this.
 
 Using a command line tool like jq we can easily extract the methods annotated with IsTest using a command like this:
 
