@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Listing all test methods for a given class using the Salesforce CLI and jq
+title: "Listing all test methods for a given class using the Salesforce CLI and jq"
 date: 2020-10-29 19:00 -0300
 ---
 
