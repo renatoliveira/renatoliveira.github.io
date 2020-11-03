@@ -2,3 +2,4 @@ theme: jekyll-theme-cayman
 title: Renato Oliveira
 timezone: America/Sao_Paulo
 permalink: /texts/:year/:month/:day/:title
+markdown: kramdown
