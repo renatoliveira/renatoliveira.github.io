@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Listing all test methods for a given class using the Salesforce CLI and jq"
-date: 2020-10-29 19:00 -0300
+date: 2019-10-29 19:00 -0300
 ---
 
 First of all, we can’t query the ApexClass table directly using the IsTestClass field as criteria, because it doesn’t exist. The second problem is that we have differences between managed and unmanaged classes. The later one’s code isn’t accessible, so we can’t just search for the @IsTest annotation.
