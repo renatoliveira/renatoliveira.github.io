@@ -17,3 +17,4 @@ I like to help people sometomes at the [Salesforcethe Stack Exchange (SFSE)](htt
 ## Posts
 
 [Cannot specify a gender for a gender neutral language” error when creating a new package version using 2GP? 🤔](/texts/2019/11/11/gender-neutral-2gp)
+[Listing all test methods for a given class using the Salesforce CLI and jq](/texts/2019/10/29/list-test-methods-cli)
