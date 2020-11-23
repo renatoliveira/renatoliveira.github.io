@@ -16,3 +16,7 @@ This signature is prefixed in the file's binary, and each file type has some def
 
 A PDF document, for example, has the following bytes in its signature: `25 50 44 46 2d`.
 
+Sources:
+
+1. https://en.wikipedia.org/wiki/List_of_file_signatures
+2. https://asecuritysite.com/forensics/magic
