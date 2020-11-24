@@ -67,7 +67,7 @@ public inherited sharing class ContentDocumentLinkHandler {
                     isValid = isValidFile(p, record.VersionData);
                 }
                 if (!isValid) {
-                    throw new DmlException('Arquivo com extensão inválida.');
+                    throw new DmlException('Unauthorized file type.');
                 }
             }
         }
