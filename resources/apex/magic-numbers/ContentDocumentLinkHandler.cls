@@ -6,10 +6,10 @@ public inherited sharing class ContentDocumentLinkHandler {
     private static Map<String, List<String>> extensions = new Map<String, List<String>>{
         '.doc' => new List<String>{'D0CF11E0A1B11AE1'},
         '.docx' => new List<String>{'504B0304', '504B0506', '504B0708'},
-        '.jpg' => new List<String>{'FFD8FFDB', 'FFD8FFE000104A4649460001'},
-        '.jpeg' => new List<String>{'FFD8FFEE', 'FFD8FFE1.{4}457869660000'},
+        '.jpg' => new List<String>{'FFD8FFDB', 'FFD8FFE000104A4649460001', 'FFD8FF.{6,20}4578696600004D4D002A'},
+        '.jpeg' => new List<String>{'FFD8FFEE', 'FFD8FFE1.{4}457869660000', 'FFD8FF.{6,20}4578696600004D4D002A'},
         '.pdf' => new List<String>{'255044462d'}
-        };
+    };
 
     public void run() {
         checkFileSignature();
