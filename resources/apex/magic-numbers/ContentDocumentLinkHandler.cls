@@ -75,8 +75,7 @@ public inherited sharing class ContentDocumentLinkHandler {
 
     private Boolean isValidFile(Pattern magicNumberPatern, Blob fileContent) {
         String hexBody = EncodingUtil.convertToHex(fileContent);
-        Matcher m = magicNumberPatern.matcher(hexBody.left(32));
-        System.debug(LoggingLevel.FINE, hexBody.left(32));
+        Matcher m = magicNumberPatern.matcher(hexBody.left(64));
         return m.find();
     }
 }
