@@ -1,0 +1,13 @@
+baseURL = "https://renatoliveira.github.io/"
+languageCode = "en-us"
+title = "Renato Oliveira"
+timeZone = "America/Sao_Paulo"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+description = "Salesforce architect focused on scalable solutions, integrations, DevOps, and AI automation."
+googleAnalytics = "G-Y7JTB5MZYW"
+
+[markup.goldmark.renderer]
+unsafe = true

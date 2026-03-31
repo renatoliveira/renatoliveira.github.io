@@ -1,0 +1,230 @@
+/* Semantic resume page (matches layouts/index.html structure) */
+
+:root {
+  --text: #1a1d21;
+  --muted: #5c646e;
+  --accent: #155799;
+  --border: #e2e6ea;
+  --surface: #f6f8fa;
+  --max: 42rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.site-body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--text);
+  background: #fff;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.site-header {
+  padding: clamp(1.75rem, 5vw, 2.75rem) clamp(1rem, 4vw, 1.5rem);
+  background: linear-gradient(160deg, #0f172a 0%, #1e3a5f 50%, #155799 100%);
+  color: #f4f7fb;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.85rem, 5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.site-header > p {
+  margin: 0.35rem auto;
+  max-width: 36rem;
+  color: rgba(244, 247, 251, 0.88);
+}
+
+.site-header > p:first-of-type {
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.site-header-photo {
+  margin: 1.25rem 0;
+}
+
+.site-header-photo img {
+  display: inline-block;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  vertical-align: middle;
+}
+
+.site-header-meta {
+  margin: 1rem auto 0;
+  padding: 0;
+  max-width: var(--max);
+  list-style: none;
+  text-align: left;
+  display: inline-block;
+  font-size: 0.95rem;
+  color: rgba(244, 247, 251, 0.9);
+}
+
+.site-header-meta li {
+  margin-bottom: 0.35rem;
+}
+
+.site-header-meta a {
+  color: #9cc8ff;
+}
+
+.site-nav {
+  margin-top: 1.25rem;
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: center;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-nav a:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.site-content {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: clamp(1.75rem, 4vw, 2.5rem) clamp(1rem, 4vw, 1.5rem);
+}
+
+.site-content section {
+  margin-bottom: 2.25rem;
+  scroll-margin-top: 0.75rem;
+}
+
+.site-content h2 {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.site-content article {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-content article:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.site-content h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+}
+
+.site-content article > p {
+  margin: 0.25rem 0;
+  color: var(--muted);
+  font-size: 0.97rem;
+}
+
+.site-content article > p:first-of-type {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.site-content ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.site-content section > p {
+  margin: 0;
+  max-width: 40rem;
+}
+
+.site-content code {
+  font-size: 0.88em;
+  padding: 0.12rem 0.35rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.site-footer {
+  margin-top: 1rem;
+  padding: 1.25rem clamp(1rem, 4vw, 1.5rem) 2rem;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+@media print {
+  .site-header {
+    background: none;
+    color: #000;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .site-header > p,
+  .site-header-meta {
+    color: #333;
+  }
+
+  .site-header-meta a,
+  .site-nav a {
+    color: #000;
+  }
+
+  .site-nav a {
+    border: 1px solid #999;
+    background: #f5f5f5;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.75em;
+    word-break: break-all;
+  }
+}

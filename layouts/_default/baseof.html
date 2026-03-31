@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ with site.Language.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+  {{- with site.Params.description }}
+  <meta name="description" content="{{ . }}">
+  {{- end }}
+  <link rel="stylesheet" href="{{ "css/page.css" | relURL }}">
+  {{- with site.Params.googleAnalytics }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ . }}');
+  </script>
+  {{- end }}
+</head>
+<body class="site-body">
+{{ block "main" . }}{{ end }}
+</body>
+</html>
